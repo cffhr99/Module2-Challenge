@@ -14,7 +14,8 @@ Here is the link for refactored code :[VBA_Challenge.vbs](https://github.com/cff
 ### Refactoring the code
 In order to do more efficient, the first job is to switch the nesting order of the for loops. There are four new arrays created, which are *tickerIndex*, *tickerVolumes*, *tickerStartingPrices* and *tickerEndingPrices*.
 #### Refactored Code
-  'Activate data worksheet
+
+    'Activate data worksheet
     Worksheets(yearValue).Activate
     
     'Get the number of rows to loop over
@@ -101,20 +102,20 @@ In order to do more efficient, the first job is to switch the nesting order of t
     endTime = Timer
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-End Sub
+     End Sub
 
 
 #### Old Code
- '3a) Initialize variables for starting price and ending price
-   Dim startingPrice As Single
-   Dim endingPrice As Single
-   '3b) Activate data worksheet
-   Worksheets("2017").Activate
-   '3c) Get the number of rows to loop over
-   RowCount = Cells(Rows.Count, "A").End(xlUp).Row
+    '3a) Initialize variables for starting price and ending price
+     Dim startingPrice As Single
+     Dim endingPrice As Single
+     '3b) Activate data worksheet
+     Worksheets("2017").Activate
+     '3c) Get the number of rows to loop over
+     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
 
-   '4) Loop through tickers
-   For i = 0 To 11
+     '4) Loop through tickers
+       For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
        '5) loop through rows in the data
@@ -146,13 +147,19 @@ End Sub
        Cells(4 + i, 2).Value = totalVolume
        Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
 
-   Next i
+     Next i
    
- endTime = Timer
+      endTime = Timer
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
-End Sub
+     End Sub
 
+
+These variables assigned the *tickerVolumes*, *tickerStartingPrices* and *tickerEndingPrices* to each ticker symbol before interating through the dataset. Therefore, the analysis would run more faster than the nested for loops.
 
 ### Run-time for Each Method on 2017 and 2018
+Below pictures are the run-times from old code and refactored code.
+
+#### Refactored Code run-times
+![new 2017)(https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/VBA_Challenge_2017.png)
 
 ## Summary
