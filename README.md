@@ -160,6 +160,11 @@ These variables assigned the *tickerVolumes*, *tickerStartingPrices* and *ticker
 Below pictures are the run-times from old code and refactored code.
 
 #### Refactored Code run-times
-![new 2017)(https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/VBA_Challenge_2017.png)
+![new 2017](https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/VBA_Challenge_2017.png?raw=true)
+![new_2018](https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/VBA_Challenge_2018.png?raw=true)
+
+#### Old Code run-times
+![old_2017](https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/2017_old.png?raw=true)
+![old_2018](https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/2018_old.png?raw=true)
 
 ## Summary
