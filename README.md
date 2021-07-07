@@ -167,4 +167,8 @@ Below pictures are the run-times from old code and refactored code.
 ![old_2017](https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/2017_old.png?raw=true)
 ![old_2018](https://github.com/cffhr99/Module2-Challenge/blob/main/Resources/2018_old.png?raw=true)
 
+Based on the run-times, it is obvious that the refactored code runs about 0.5 seconds faster than the original code, which means the refactored code is more efficient.
+
 ## Summary
+ 1). The major advantage of refactoring code is improve the efficent of the analysis. However, the disadvantage of refactoring code is that the analysis will become more instability. Since the original code works fine, the analysis will be unusable if the refactoring work has some bugs. Therefore, refactoring code is always necessary when it will improve the analysis a lot and the original code is saved well.
+ 2). The advantage of refactoring code in VBA is that you can compare the refacoring code and original code. Side by side windows can make the refactoring process more easier. However, the disadvantage is that the VBA requires a strong understanding of syntax and logic algorithm. VBA does not show a live window results so syntax is necessary. And a good understanding of logic alogrithm will help the refactored code more efficient.
